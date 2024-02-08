@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  box-sizing: border-box;
+}
+
+.hilang {
+  @apply transition-all delay-1000 ease-in-out block;
+  /* display: block; */
+}
+
+.transisi {
+  @apply transition-all duration-1000 rotate-45;
+}
+
+.transisi-elemen {
+  @apply opacity-90;
+}
+.navbar-trans {
+  @apply bg-opacity-70;
+}

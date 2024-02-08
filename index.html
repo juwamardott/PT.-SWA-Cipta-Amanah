@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. SWA Cipta Amanah</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Fira+Sans:wght@500&family=Inter:wght@200&family=Jost:wght@300&family=Nova+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <div class="bg-[url('/img/bg-canva4.png')]"></div> -->
+    <section id="hero">
+      <div class="w-full bg-putih relative">
+        <!-- Paret -->
+        <div
+          class="w-[100%] lg:w-[100%] mx-auto font-mono font-semibold fixed bg-white z-50 lg:block flex"
+          id="navbar-nav"
+        >
+          <!-- Nama Perusahan -->
+          <div class="w-[90%] p-2 text-center lg:text-justify mx-auto">
+            <h1 class="text-lg lg:text-3xl font-fira">
+              PT. <span class="text-utama">SWA</span> Cipta Amanah
+            </h1>
+          </div>
+
+          <!-- Navbar -->
+          <div class="lg:w-[90%] w-[20%] lg:mx-auto p-1 relative">
+            <!-- Hamburger menu -->
+            <div class="lg:hidden mt-1" id="hamburger">
+              <a href="">
+                <img src="icon/more.png" alt="" class="w-6" />
+              </a>
+            </div>
+            <!-- Navbar -->
+            <div class="lg:text-center lg:block lg:text-lg font-thin">
+              <ul>
+                <li
+                  class="lg:flex lg:justify-between hidden p-5 lg:p-1 absolute lg:static w-[130px] lg:h-[auto] h-auto lg:w-full bg-white lg:bg-transparent mx-auto z-50 right-10 rounded-md bg-opacity-95 top-12 font-semibold italic font-jos text-sm lg:text-base"
+                  id="navbar"
+                >
+                  <div class="mt-2 lg:mt-0 hover:text-utama group">
+                    <a href="#hero">Home</a>
+                    <div
+                      class="w-[50px] h-[2px] bg-utama scale-0 group-hover:scale-100"
+                    ></div>
+                  </div>
+                  <div class="mt-2 lg:mt-0 hover:text-utama group">
+                    <a href="#about-us">About Us</a>
+                    <div
+                      class="w-[50px] h-[2px] bg-utama scale-0 group-hover:scale-100"
+                    ></div>
+                  </div>
+                  <div class="mt-2 lg:mt-0 hover:text-utama group">
+                    <a href="#layanan">Layanan</a>
+                    <div
+                      class="w-[50px] h-[2px] bg-utama scale-0 group-hover:scale-100"
+                    ></div>
+                  </div>
+                  <div class="mt-2 lg:mt-0 hover:text-utama group">
+                    <a href="#portfolio">Portfolio</a>
+                    <div
+                      class="w-[50px] h-[2px] bg-utama scale-0 group-hover:scale-100"
+                    ></div>
+                  </div>
+                  <div class="mt-2 lg:mt-0 hover:text-utama group">
+                    <a href="#client">Client</a>
+                    <div
+                      class="w-[50px] h-[2px] bg-utama scale-0 group-hover:scale-100"
+                    ></div>
+                  </div>
+                  <div class="mt-2 lg:mt-0 hover:text-utama group">
+                    <a href="#contact">Contact Us</a>
+                    <div
+                      class="w-[50px] h-[2px] bg-utama scale-0 group-hover:scale-100"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- ENd navbar -->
+          </div>
+        </div>
+        <!-- Slider Gambar -->
+        <div class="w-full lg:h-full mx-auto pt-11 lg:pt-0">
+          <div class="transition duration-1000" id="slider">
+            <img
+              src="img/1.png"
+              alt=""
+              class="mx-auto lg:w-[100%] lg:h-[20%]"
+            />
+          </div>
+          <div class="transition duration-1000" id="slider">
+            <img
+              src="img/2.png"
+              alt=""
+              class="mx-auto lg:w-[100%] lg:h-[20%]"
+            />
+          </div>
+          <!-- <div class="" id="slider">
+            <img
+              src="img/3.png"
+              alt=""
+              class="mx-auto lg:w-[100%] lg:h-[20%]"
+            />
+          </div> -->
+        </div>
+        <!-- Butoon prev -->
+        <button
+          class="absolute top-[60%] left-3 lg:top-[50%] lg:left-[1%]"
+          id="prev"
+        >
+          <img src="icon/next.png" alt="" class="lg:w-16 w-7 rotate-180" />
+        </button>
+        <!-- Button next -->
+        <button
+          class="absolute top-[60%] right-3 lg:top-[50%] lg:right-[1%]"
+          id="next"
+        >
+          <img src="icon/next.png" alt="" class="lg:w-16 w-7" />
+        </button>
+
+        <!-- Tagline -->
+        <div
+          class="absolute top-20 lg:top-44 right-0 left-0 p-3 w-auto h-auto text-center"
+        >
+          <h1 class="text-sm lg:text-3xl font-inter">
+            Welcome to PT. SWA Cipta Amanah
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about-us">
+      <div class="w-full py-5">
+        <div class="container mx-auto">
+          <!-- About us -->
+          <div class="w-full text-center mt-5 font-fira font-semibold">
+            <h1 class="lg:text-4xl text-xl uppercase italic">
+              <span class="text-utama">A</span>bout
+              <span class="text-utama">Us</span>
+            </h1>
+            <!-- Line -->
+            <div
+              class="lg:w-[150px] w-[40px] h-[2px] bg-utama mx-auto rounded-full"
+            ></div>
+          </div>
+
+          <div class="lg:flex lg:justify-between lg:w-[90%] mx-auto">
+            <div class="shadow-md border mt-5 p-5 mx-auto lg:w-[50%]">
+              <!-- Img -->
+              <div class="w-full border shadow-2xl">
+                <div class="w-50%">
+                  <img src="img/mercurius.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Deskripsi -->
+            <div
+              class="w-[90%] mx-auto p-2 text-justify font-jos mt-5 lg:px-4 lg:py-0 lg:w-[50%] text-sm"
+            >
+              <p>
+                PT. SWA Cipta Amanah group memiliki 3 (tiga) unit Bisnis, yaitu
+                Konsultan Teknik, Kontraktor dan Properti. PT. SWA Cipta Amanah
+                berkomitmen untuk terus mengembangkan karya, inovasi dan bisnis
+                dengan mengintegrasikan dedikasi ilmu pengetahuan dan totalitas
+                berkarya. Dari segi desain maupun kualitas pembangunan yang
+                semakin baik dan juga berkomitmen kepada pelanggan serta
+                keberlanjutan karya arsitektural. Karya Konsultan teknik
+                khususnya karya arsitektural telah dimulai sejak 2004 dengan
+                berbagai karya arsitektural yang tersebar di berbagai daerah di
+                nusantara.
+              </p>
+
+              <div
+                class="border border-sky-500 w-[40%] lg:w-[20%] text-center mt-3 p-2 lg:mt-20 group hover:bg-utama hover:border-white"
+              >
+                <a href="" class="text-sky-500 group-hover:text-white font-jos"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan">
+      <div class="w-full">
+        <div class="w-full lg:grid lg:grid-cols-2">
+          <!-- Kata 1 -->
+          <div
+            class="bg-sky-600 hidden lg:flex lg:items-center lg:justify-center"
+          >
+            <h1
+              class="text-center text-white font-jos font-semibold italic text-xl lg:text-5xl lg:w-[80%]"
+            >
+              ANDA INGIN MEMBANGUN RUMAH IMPIAN ANDA ?
+            </h1>
+          </div>
+          <!-- elemen -->
+          <div
+            class="h-[600px] bg-[url('../img/bg-canva4.png')] bg-cover bg-center pt-5"
+          >
+            <h1
+              class="text-center text-white font-jos font-semibold italic text-xl lg:hidden"
+            >
+              ANDA INGIN MEMBANGUN RUMAH IMPIAN ANDA ?
+            </h1>
+            <!-- isi -->
+            <div
+              class="bg-white w-[90%] lg:w-90%] lg:h-[60%] h-auto mx-auto mt-10 lg:mt-40 lg:-ml-[2rem] py-3 px-10 rounded-md shadow-md"
+            >
+              <h1
+                class="text-center text-lg lg:text-2xl font-jos font-semibold text-utama mt-10"
+              >
+                Kami ahli dalam Renovasi!
+              </h1>
+              <p class="text-justify font-jos mt-2 text-sm lg:text-base">
+                Sebagai salah satu perusahaan yang bergerak dalam bidang
+                renovasi dan pembangunan rumah, gedung, dan kantor di kota
+                Malang, kami siap membantu segala urusan anda dalam bidang
+                arsitek dan properti. Sudah banyak renovasi dan pembangunan yang
+                sudah kami selesaikan baik itu lokal ataupun nonlokal.
+              </p>
+              <div
+                class="border border-sky-500 w-[40%] lg:w-[20%] text-center mt-3 p-2 lg:mt-20 group hover:bg-utama hover:border-white mx-auto shadow-md"
+              >
+                <a href="" class="text-sky-500 group-hover:text-white font-jos"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- elemen -->
+          <div
+            class="h-[600px] bg-[url('../img/bg-canva7.jpg')] bg-cover bg-center pt-10 z-40"
+          >
+            <div
+              class="bg-white w-[90%] lg:w-[90%] lg:h-[60%] h-auto mx-auto py-3 px-10 lg:mt-36 lg:-mr-[2rem] rounded-md shadow-md"
+            >
+              <h1
+                class="text-center font-jos text-lg lg:text-2xl font-semibold text-utama mt-10"
+              >
+                Kami ahli dalam Kontraktor!
+              </h1>
+              <p class="text-justify mt-2 font-jos text-sm lg:text-base">
+                Kontraktor bangunan adalah jasa dalam pembangun rumah yang dapat
+                membantu proyek renovasi atau bangun rumah dan membuat rumah
+                Anda semakin menawan sesuai dengan yang diharapkan. Kontraktor
+                berpengalaman dapat membantu menyelesaikan ide, disain, maupun
+                pembangunan dengan professional.
+              </p>
+              <div
+                class="border border-sky-500 w-[40%] lg:w-[20%] text-center mt-3 p-2 lg:mt-20 group hover:bg-utama hover:border-white mx-auto shadow-md"
+              >
+                <a href="" class="text-sky-500 group-hover:text-white font-jos"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <h1
+              class="text-center text-white font-jos font-semibold italic text-xl mt-32 lg:hidden"
+            >
+              KAMI JUGA BERGERAK DALAM BIDANG KONTRAKTOR
+            </h1>
+          </div>
+          <!-- Kata 2 -->
+          <div
+            class="bg-utama hidden lg:flex lg:items-center lg:justify-center"
+          >
+            <h1
+              class="text-center text-white font-mono italic text-xl lg:text-5xl mt-20 lg:w-[80%]"
+            >
+              KAMI JUGA BERGERAK DALAM BIDANG KONTRAKTOR
+            </h1>
+          </div>
+        </div>
+
+        <!-- Layanan Kami -->
+        <div class="w-full py-10">
+          <h1
+            class="uppercase italic text-center text-xl lg:text-3xl font-semibold font-fira"
+          >
+            Layanan
+            <span class="text-utama font-semibold">Kami</span>
+          </h1>
+          <!-- line -->
+          <div class="w-[100px] h-[2px] rounded-full bg-utama mx-auto"></div>
+
+          <!-- Berbagai Layanan -->
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-2 gap-y-3 border text-center w-full h-auto p-5 mt-5 font-jos"
+          >
+            <div class="border py-2 px-5 shadow-md">
+              <h1 class="lg:text-2xl text-lg font-semibold">
+                <span class="text-utama">01</span> Konsultan Properti
+              </h1>
+              <!-- line -->
+              <div class="bg-utama w-[300px] h-[2px] mx-auto mb-4"></div>
+              <p class="font-thin text-center">
+                Kami siap membantu dalam hal konsultasi terkait properti dan
+                desain arsitektur. Percayakanlah kami sebagai partner anda.
+              </p>
+              <img src="icon/icon1.png" alt="" class="w-10 mt-3 ml-[90%]" />
+            </div>
+            <div class="border py-2 px-5 shadow-md">
+              <h1 class="lg:text-2xl text-lg  font-semibold">
+                <span class="text-utama">02</span> Developer
+              </h1>
+              <!-- line -->
+              <div class="bg-utama w-[300px] h-[2px] mx-auto mb-4"></div>
+              <p class="font-thin text-center">
+                Dalam beberapa hal kami melakukan pembangunan properti seperti
+                rumah, kantor, hotel, gudang, dan lain sebagainya.
+              </p>
+              <img src="icon/icon2.png" alt="" class="w-10 mt-3 ml-[90%]" />
+            </div>
+            <div class="border py-2 px-5 shadow-md">
+              <h1 class="lg:text-2xl text-lg font-semibold">
+                <span class="text-utama">03</span> Kontruksi
+              </h1>
+              <!-- line -->
+              <div class="bg-utama w-[300px] h-[2px] mx-auto mb-4"></div>
+              <p class="font-thin text-center">
+                Tidak jarang kami melakukan desain konstruksi bangunan. Hingga
+                saat ini kami telah melakukan pekerjaan konstruksi.
+              </p>
+              <img src="icon/icon3.png" alt="" class="w-10 mt-3 ml-[90%]" />
+            </div>
+            <div class="border py-2 px-5 shadow-md">
+              <h1 class="lg:text-2xl text-lg font-semibold">
+                <span class="text-utama">04</span> Perencanaan Pekerjaan
+              </h1>
+              <!-- line -->
+              <div class="bg-utama w-[300px] h-[2px] mx-auto mb-4"></div>
+              <p class="font-thin text-center">
+                Perencanaan setiap pekerjaan properti harus dilakukan untuk
+                menghasilkan sesuatu yang maksimal.
+              </p>
+              <img src="icon/icon4.png" alt="" class="w-10 mt-3 ml-[90%]" />
+            </div>
+            <div class="border py-2 px-5 shadow-md">
+              <h1 class="lg:text-2xl text-lg font-semibold">
+                <span class="text-utama">05</span> Teknologi Informasi
+              </h1>
+              <!-- line -->
+              <div class="bg-utama w-[300px] h-[2px] mx-auto mb-4"></div>
+              <p class="font-thin text-center">
+                Kami juga siap melayani klien yang memerlukan teknologi
+                informasi khususnya bidang internet atau website.
+              </p>
+              <img src="icon/icon5.png" alt="" class="w-10 mt-3 ml-[90%]" />
+            </div>
+            <div class="border py-2 px-5 shadow-md">
+              <h1 class="lg:text-2xl text-lg font-semibold">
+                <span class="text-utama">06</span> Supervisi
+              </h1>
+              <!-- line -->
+              <div class="bg-utama w-[300px] h-[2px] mx-auto mb-4"></div>
+              <p class="font-thin text-center">
+                Dalam setiap pekerjaan kami selalu lakukan pendampingan atau
+                supervisi untuk pelayanan prima kepada pelanggan.
+              </p>
+              <img src="icon/icon6.png" alt="" class="w-10 mt-3 ml-[90%]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="w-full py-10">
+        <!-- Portfolia -->
+        <h1
+          class="uppercase italic text-center font-fira text-xl lg:text-3xl font-semibold"
+        >
+          Port<span class="text-utama font-semibold">Folio</span>
+        </h1>
+        <!-- line -->
+        <div class="w-[100px] h-[2px] rounded-full bg-utama mx-auto mb-5"></div>
+        <!-- container -->
+        <div class="container mx-auto border border-utama relative lg:w-[50%]">
+          <div class="flex images">
+            <img src="img/4.jpg" alt="" id="img" />
+            <img src="img/5.jpg" alt="" id="img" />
+            <img src="img/6.jpg" alt="" id="img" />
+            <img src="img/7.jpg" alt="" id="img" />
+            <img src="img/8.jpg" alt="" id="img" />
+            <img src="img/9.jpg" alt="" id="img" />
+            <img src="img/10.jpg" alt="" id="img" />
+            <img src="img/11.jpg" alt="" id="img" />
+            <img src="img/12.jpg" alt="" id="img" />
+            <img src="img/13.jpg" alt="" id="img" />
+            <img src="img/15.jpg" alt="" id="img" />
+            <img src="img/16.jpg" alt="" id="img" />
+            <img src="img/17.jpg" alt="" id="img" />
+            <img src="img/19.jpg" alt="" id="img" />
+            <img src="img/20.jpg" alt="" id="img" />
+            <img src="img/21.jpg" alt="" id="img" />
+            <img src="img/22.jpg" alt="" id="img" />
+            <img src="img/23.jpg" alt="" id="img" />
+            <img src="img/24.jpg" alt="" id="img" />
+            <img src="img/25.jpg" alt="" id="img" />
+            <img src="img/27.jpg" alt="" id="img" />
+            <img src="img/28.jpg" alt="" id="img" />
+            <img src="img/29.jpg" alt="" id="img" />
+            <img src="img/30.jpg" alt="" id="img" />
+            <img src="img/31.jpg" alt="" id="img" />
+            <!-- <img src="img/32.jpg" alt="" id="img" /> -->
+          </div>
+
+          <div class="absolute bottom-[40%] left-[2%]">
+            <button
+              id="left"
+              class="bg-white w-auto h-auto rounded-full bg-opacity-80"
+            >
+              <img src="icon/next.png" alt="" class="w-10 lg:w-12 rotate-180" />
+            </button>
+          </div>
+          <div class="absolute bottom-[40%] right-[2%]">
+            <button
+              id="right"
+              class="bg-white w-auto h-auto rounded-full bg-opacity-80"
+            >
+              <img src="icon/next.png" alt="" class="w-10 lg:w-12" />
+            </button>
+          </div>
+        </div>
+
+        <!-- line -->
+        <div class="w-[90%] h-[2px] rounded-full bg-utama mx-auto mt-5"></div>
+
+        <!-- Content -->
+        <div
+          class="w-full mt-10  grid grid-cols-2 lg:grid-cols-4 gap-2 relative"
+        >
+          <!-- img -->
+          <div class="col-span-1 group transition bg-white relative border border-utama">
+            <img
+              src="img/4.jpg"
+              alt=""
+              id="img1"
+              class="group-hover:opacity-30 group-hover:transition ease-in-out duration-500"
+            />
+
+            <!-- Deskripsi -->
+            <div class="w-full absolute lg:top-32 top-14 right-0 left-0 text-center z-0 group-hover:scale-100 scale-0 font-mono italic text-utama " id="deskripsi">
+              <h1>Meeting Room</h1>
+            </div>
+          </div>
+          <div class="col-span-1 group transition bg-white relative border border-utama">
+            <img
+              src="img/5.jpg"
+              alt=""
+              id="img1"
+              class="group-hover:opacity-30 group-hover:transition ease-in-out duration-500"
+            />
+
+            <!-- Deskripsi -->
+            <div class="w-full absolute lg:top-32 top-14 right-0 left-0 text-center z-0 group-hover:scale-100 scale-0 font-mono italic text-utama " id="deskripsi">
+              <h1>Workspace</h1>
+            </div>
+          </div>
+          <div class="col-span-1 group transition bg-white relative border border-utama">
+            <img
+              src="img/7.jpg"
+              alt=""
+              id="img1"
+              class="group-hover:opacity-30 group-hover:transition ease-in-out duration-500"
+            />
+
+            <!-- Deskripsi -->
+            <div class="w-full absolute lg:top-32 top-14 right-0 left-0 text-center z-0 group-hover:scale-100 scale-0 font-mono italic text-utama " id="deskripsi">
+              <h1>Front Office</h1>
+            </div>
+          </div>
+          <div class="col-span-1 group transition bg-white relative border border-utama">
+            <img
+              src="img/10.jpg"
+              alt=""
+              id="img1"
+              class="group-hover:opacity-30 group-hover:transition ease-in-out duration-500"
+            />
+
+            <!-- Deskripsi -->
+            <div class="w-full absolute lg:top-32 top-14 right-0 left-0 text-center z-0 group-hover:scale-100 scale-0 font-mono italic text-utama " id="deskripsi">
+              <h1>Waiting Room</h1>
+            </div>
+          </div>
+
+        <!-- End content -->
+      </div>
+    </section>
+
+    <section id="client">
+      <div class="w-full py-10">
+
+        <h1
+          class="uppercase italic text-center font-fira text-xl lg:text-3xl font-semibold"
+        >
+          Client
+          <span class="text-utama font-semibold">Kami</span>
+        </h1>
+        <!-- line -->
+        <div class="w-[180px] h-[2px] rounded-full bg-utama mx-auto"></div>
+        <div class="container mx-auto border shadow-md mt-5 p-5 rounded-md ">
+          <!-- grid -->
+          <div class="w-full flex justify-around items-center">
+            <img src="img/IAI.png" alt="" class="w-32 lg:w-32">
+            <img src="img/p-3.png" alt="" class="w-20 lg:w-32">
+            <img src="img/logo.png" alt="" class="w-20 lg:w-32">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="w-full pt-10">
+        
+        <h1
+          class="uppercase italic text-center font-fira text-xl lg:text-3xl font-semibold"
+        >
+          Contact
+          <span class="text-utama font-semibold">us</span>
+        </h1>
+        <!-- line -->
+        <div class="w-[180px] h-[2px] rounded-full bg-utama mx-auto mb-5"></div>
+        <div class="w-full bg-[url('../img/bg-canva4.png')] bg-cover bg-no-repeat h-screen relative">
+          <div class="container mx-auto absolute lg:top-10 top-5 right-0 left-0 font-jos">
+            <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-2 p-2">
+              <div class="text-center p-2 font-semibold border">
+                <h1 class="text-xl font-fira text-utama">Menu</h1>
+                <div class="text-sm  p-2  font-semibold italic mt-4">
+                  <div class="flex mb-3">
+                    <img src="icon/next-3.png" alt="" class="w-5">
+                    <a href="#hero" class="inline-block ml-2">Home</a>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/next-3.png" alt="" class="w-5">
+                    <a href="#about-us" class="inline-block ml-2">About</a>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/next-3.png" alt="" class="w-5">
+                    <a href="#layanan" class="inline-block ml-2">Layanan</a>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/next-3.png" alt="" class="w-5">
+                    <a href="#portfolio" class="inline-block ml-2">Portfolio</a>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/next-3.png" alt="" class="w-5">
+                    <a href="#client" class="inline-block ml-2">Client</a>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/next-3.png" alt="" class="w-5">
+                    <a href="#contact" class="inline-block ml-2">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center border">
+                <h1 class="text-xl font-semibold p-2 font-fira text-utama">Media Partner</h1>
+                <div class="w-full flex justify-center items-center mt-4">
+                  <img src="img/IAI.png" alt="" class="w-20 lg:w-40">
+                </div>
+              </div>
+              <div class="text-center h-auto col-span-2 lg:col-span-1">
+                <h1 class="text-xl font-semibold font-fira text-utama">Hubungi Kami</h1>
+                <div class="p-2 font-semibold mt-4">
+                  <div class="flex mb-3">
+                    <img src="icon/1.png" alt="" class="w-5 h-5">
+                    <p class="text-sm text-justify ml-2">RT.5/RW.2, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110.</p>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/6.png" alt="" class="w-5 h-5">
+                    <p class="text-sm text-justify ml-2">+62 8584 7968 314.</p>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/5.png" alt="" class="w-5 h-5">
+                    <p class="text-sm text-justify ml-2">pt_swa_cipta_amanah.com</p>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/3.png" alt="" class="w-5 h-5">
+                    <p class="text-sm text-justify ml-2">+62 8584 7968 314</p>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/2.png" alt="" class="w-5 h-5">
+                    <p class="text-sm text-justify ml-2">pt_swa_cipta_amanah</p>
+                  </div>
+                  <div class="flex mb-3">
+                    <img src="icon/4.png" alt="" class="w-5 h-5">
+                    <p class="text-sm text-justify ml-2">PT. SWA Cipta Amanah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Copyright -->
+          <div class="absolute -bottom-5 left-0 right-0">
+            <!-- line -->
+            <div class="w-[100%] h-auto bg-white bg-opacity-60 mx-auto mb-5 p-5">
+              <h1 class="text-center text-sm lg:text-xl font-jos">@ 2024 PT. SWA Cipta Amanah. All Rights Reserved</h1>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // SLide Portfolio
+      const img = document.querySelectorAll("#img");
+      const right = document.querySelector("#right");
+      const left = document.querySelector("#left");
+      let currentIndex = 0;
+
+      function updateImg() {
+        img.forEach((item, index) => {
+          item.style.display = index === currentIndex ? "block" : "none";
+        });
+      }
+
+      function isLastImage() {
+        return currentIndex === img.length - 1;
+      }
+
+      function isFirstImage() {
+        return currentIndex === 0;
+      }
+
+      right.addEventListener("click", () => {
+        if (!isLastImage()) {
+          currentIndex++;
+        }
+        updateImg();
+      });
+
+      left.addEventListener("click", () => {
+        if (!isFirstImage()) {
+          currentIndex--;
+        }
+        updateImg();
+      });
+
+      // Memastikan gambar pertama ditampilkan pada awalnya
+      updateImg();
+
+      // Navbar
+      const hamburger = document.querySelector("#hamburger");
+      const navbar = document.querySelector("#navbar");
+      const navbarNav = document.querySelector("#navbar-nav");
+
+      hamburger.addEventListener("click", function () {
+        event.preventDefault();
+        navbar.classList.toggle("hilang");
+      });
+
+      window.onscroll = () => {
+        navbar.classList.remove("hilang");
+
+        const fix = navbarNav.scrollTop;
+        if (window.pageYOffset > fix) {
+          navbarNav.classList.add("navbar-trans");
+        } else {
+          navbarNav.classList.remove("navbar-trans");
+        }
+      };
+
+      const sliders = document.querySelectorAll("#slider");
+      let currentSlide = 0;
+
+      document
+        .querySelector("#next")
+        .addEventListener("click", () => showSlide(currentSlide + 1));
+      document
+        .querySelector("#prev")
+        .addEventListener("click", () => showSlide(currentSlide - 1));
+
+      function showSlide(index) {
+        currentSlide = (index + sliders.length) % sliders.length;
+
+        sliders.forEach((slide, i) => {
+          slide.style.display = i === currentSlide ? "block" : "none";
+        });
+      }
+
+      function otomatis() {
+        showSlide(currentSlide + 1);
+        setTimeout(otomatis, 4000);
+      }
+
+      otomatis();
+    </script>
+  </body>
+</html>
